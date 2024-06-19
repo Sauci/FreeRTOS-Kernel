@@ -935,6 +935,9 @@ target_include_directories(freertos_kernel_port_headers INTERFACE
         ${CMAKE_CURRENT_LIST_DIR}/ThirdParty/GCC/Xtensa_ESP32
         ${CMAKE_CURRENT_LIST_DIR}/ThirdParty/GCC/Xtensa_ESP32/include>
 
+    # TI TMS570 port for GCC
+    $<$<STREQUAL:${FREERTOS_PORT},GCC_TI_TMS570>:${CMAKE_CURRENT_LIST_DIR}/GCC/TI-TMS570>
+
     # Renesas (formerly NEC) 78K port for IAR EW78K
     $<$<STREQUAL:${FREERTOS_PORT},IAR_78K0K>:${CMAKE_CURRENT_LIST_DIR}/IAR/78K0R>
 

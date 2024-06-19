@@ -354,7 +354,7 @@ add_library(freertos_kernel_port OBJECT
     # TI TMS570 port for GCC
     $<$<STREQUAL:${FREERTOS_PORT},GCC_TI_TMS570>:
         GCC/TI-TMS570/port.c
-        GCC/TI-TMS570/portASM.asm>
+        GCC/TI-TMS570/portASM.S>
 
     # Synopsys ARC architecture ports for GCC
     $<$<STREQUAL:${FREERTOS_PORT},GCC_ARC_EM_HS>:

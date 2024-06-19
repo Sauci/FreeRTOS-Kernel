@@ -351,6 +351,11 @@ add_library(freertos_kernel_port OBJECT
         GCC/TriCore_1782/port.c
         GCC/TriCore_1782/porttrap.c>
 
+    # TI TMS570 port for GCC
+    $<$<STREQUAL:${FREERTOS_PORT},GCC_TI_TMS570>:
+        GCC/TI-TMS570/port.c
+        GCC/TI-TMS570/portASM.asm>
+
     # Synopsys ARC architecture ports for GCC
     $<$<STREQUAL:${FREERTOS_PORT},GCC_ARC_EM_HS>:
         ThirdParty/GCC/ARC_EM_HS/arc_freertos_exceptions.c

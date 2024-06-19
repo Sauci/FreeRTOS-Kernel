@@ -124,6 +124,7 @@ if(NOT FREERTOS_PORT)
         " GCC_XTENSA_ESP32                 - Compiler: GCC           Target: Xtensa ESP32\n"
         " GCC_AVRDX                        - Compiler: GCC           Target: AVRDx\n"
         " GCC_AVR_MEGA0                    - Compiler: GCC           Target: AVR Mega0\n"
+        " GCC_TI_TMS570                    - Compiler: GCC           Target: Texas Instruments TMS570\n"
         " IAR_78K0K                        - Compiler: IAR           Target: Renesas 78K0K\n"
         " IAR_ARM_CA5_NOGIC                - Compiler: IAR           Target: ARM Cortex-A5 no GIC\n"
         " IAR_ARM_CA9                      - Compiler: IAR           Target: ARM Cortex-A9\n"
